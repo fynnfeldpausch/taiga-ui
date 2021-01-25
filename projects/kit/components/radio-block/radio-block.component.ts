@@ -59,7 +59,7 @@ export class TuiRadioBlockComponent<T>
     @Input()
     @HostBinding('attr.data-tui-host-size')
     @tuiDefaultProp()
-    size: TuiSizeS | TuiSizeL = 'l';
+    size: TuiSizeS | TuiSizeL = 'm';
 
     @Input()
     @HostBinding('class._hidden_radio')
@@ -104,8 +104,8 @@ export class TuiRadioBlockComponent<T>
         return this.value === this.item && this.hideRadio;
     }
 
-    get checkboxSize(): TuiSizeL {
-        return this.size === 'l' ? 'l' : 'm';
+    get radioSize(): TuiSizeS | TuiSizeL {
+        return this.size;
     }
 
     get appearance(): TuiAppearance {

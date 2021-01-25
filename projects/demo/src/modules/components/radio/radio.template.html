@@ -26,6 +26,15 @@
         >
             <tui-radio-example-2></tui-radio-example-2>
         </tui-doc-example>
+
+        <tui-doc-example
+            id="small"
+            i18n-heading
+            heading="Small size"
+            [content]="example3"
+        >
+            <tui-radio-example-3></tui-radio-example-3>
+        </tui-doc-example>
     </ng-template>
 
     <ng-template pageTab>
@@ -113,7 +122,7 @@
                 i18n
                 documentationPropertyName="size"
                 documentationPropertyMode="input"
-                documentationPropertyType="TuiSizeL"
+                documentationPropertyType="TuiSizeS | TuiSizeL"
                 [documentationPropertyValues]="sizeVariants"
                 [(documentationPropertyValue)]="size"
             >

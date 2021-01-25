@@ -1,7 +1,7 @@
 @import 'taiga-ui-local';
 
 :host {
-    .text-body-s(2);
+    .text-body-s();
     position: relative;
     display: block;
 
@@ -28,6 +28,11 @@
 .content {
     word-wrap: break-word;
     min-width: 0;
+
+    :host[data-tui-host-size='s'] & {
+        .text-body-s(2);
+        margin-left: 8px;
+    }
 
     :host[data-tui-host-size='m'] & {
         margin-left: 8px;

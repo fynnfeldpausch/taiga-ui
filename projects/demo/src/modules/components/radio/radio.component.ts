@@ -4,6 +4,9 @@ import {default as example1Ts} from '!!raw-loader!./examples/1/index.ts';
 import {default as example2Html} from '!!raw-loader!./examples/2/index.html';
 import {default as example2Ts} from '!!raw-loader!./examples/2/index.ts';
 
+import {default as example3Html} from '!!raw-loader!./examples/3/index.html';
+import {default as example3Ts} from '!!raw-loader!./examples/3/index.ts';
+
 import {default as exampleDeclareForm} from '!!raw-loader!./examples/import/declare-form.txt';
 import {default as exampleImportModule} from '!!raw-loader!./examples/import/import-module.txt';
 import {default as exampleInsertTemplate} from '!!raw-loader!./examples/import/insert-template.txt';
@@ -11,7 +14,7 @@ import {default as exampleInsertTemplate} from '!!raw-loader!./examples/import/i
 import {Component, forwardRef} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {TUI_DEFAULT_IDENTITY_MATCHER, TuiIdentityMatcher} from '@taiga-ui/cdk';
-import {TuiSizeL} from '@taiga-ui/core';
+import {TuiSizeL, TuiSizeS} from '@taiga-ui/core';
 import {changeDetection} from '../../../change-detection-strategy';
 import {FrontEndExample} from '../../interfaces/front-end-example';
 import {ABSTRACT_PROPS_ACCESSOR} from '../abstract/inherited-documentation/abstract-props-accessor';
@@ -43,6 +46,11 @@ export class ExampleTuiRadioComponent extends AbstractExampleTuiReactiveField {
         HTML: example2Html,
     };
 
+    readonly example3: FrontEndExample = {
+        TypeScript: example3Ts,
+        HTML: example3Html,
+    };
+
     items = [
         {
             id: 0,
@@ -58,9 +66,9 @@ export class ExampleTuiRadioComponent extends AbstractExampleTuiReactiveField {
         },
     ];
 
-    readonly sizeVariants: ReadonlyArray<TuiSizeL> = ['m', 'l'];
+    readonly sizeVariants: ReadonlyArray<TuiSizeS | TuiSizeL> = ['s', 'm', 'l'];
 
-    size: TuiSizeL = this.sizeVariants[0];
+    size: TuiSizeS | TuiSizeL = this.sizeVariants[1];
 
     pseudoDisabled = false;
 
