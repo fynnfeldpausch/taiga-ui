@@ -1,0 +1,1 @@
+<tui-mime-icon [src]="tuiIconSettings"></tui-mime-icon>

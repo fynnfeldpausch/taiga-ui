@@ -516,6 +516,17 @@ export const ROUTES = [
         },
     },
     {
+        path: 'tui-mime-icon',
+        loadChildren: () =>
+            import(`../components/mime-icon/mime-icon.module`).then(
+                m => m.ExampleTuiMimeIconModule,
+            ),
+        data: {
+            path: 'tui-mime-icon',
+            title: 'MimeIcon',
+        },
+    },
+    {
         path: 'mobile-themes',
         loadChildren: () =>
             import(`../components/mobile-themes/mobile-themes.module`).then(

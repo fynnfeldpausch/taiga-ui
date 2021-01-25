@@ -35,6 +35,7 @@ export * from '@taiga-ui/kit/components/input-phone-international';
 export * from '@taiga-ui/kit/components/island';
 export * from '@taiga-ui/kit/components/line-clamp';
 export * from '@taiga-ui/kit/components/marker-icon';
+export * from '@taiga-ui/kit/components/mime-icon';
 export * from '@taiga-ui/kit/components/multi-select';
 export * from '@taiga-ui/kit/components/multi-select-option';
 export * from '@taiga-ui/kit/components/pagination';

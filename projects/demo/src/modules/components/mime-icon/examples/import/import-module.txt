@@ -1,0 +1,10 @@
+import {TuiMimeIconModule} from '@taiga-ui/kit';
+
+...
+
+@NgModule({
+    imports: [
+        ...
+        TuiMimeIconModule
+    ],
+...
